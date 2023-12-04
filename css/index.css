@@ -12,23 +12,24 @@ html {
 body{
     background: rgb(0, 0, 0);
     color: rgb(185, 181, 181);
-    /* font-family: 'Hedvig Letters Serif', serif; */
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
 }
 
 span{
     color: rgba(3, 255, 142, 0.492);
+
 }
 
 .info_span{
     text-decoration: underline;
     color: rgb(185, 181, 181);
+    
 }
 
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-right: 2%;
     padding-left: 2%;
@@ -37,7 +38,7 @@ span{
 
 .logo{
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +62,11 @@ button{
     border-radius: 10px;
     background-color: rgb(202, 53, 53);
     color: rgb(41, 39, 39);
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: .8s;
+    min-width: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button a{
@@ -75,6 +78,12 @@ button:hover{
     transition: .6s ease-in-out;
     background-color: rgba(3, 255, 142, 0.492);
     color: white;
+}
+
+@media screen and (min-width:375px) {
+    .container{
+        justify-content: space-between;
+    }
 }
 
 
@@ -121,6 +130,7 @@ button:hover{
     transition: 0.6s;
     opacity: 0;
     padding-left: 10%;
+    
 }
 
 .content:hover{
@@ -137,6 +147,11 @@ button:hover{
     transform: translateY(0px);
 }
 
+.aboutme_desc h1{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
 .aboutme_desc{
     width: 90%;
     display: flex;
@@ -150,7 +165,7 @@ button:hover{
 
 .aboutme_desc p
 {
-    font-size: 1rem;
+    font-size: .75rem;
     width: 100%;
     margin: 1% auto;
 }
@@ -162,11 +177,11 @@ button:hover{
 
     .aboutme_desc h1
     {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     .aboutme_desc p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .about_img
     {
@@ -193,7 +208,12 @@ button:hover{
 
     .about_img img{
         height: 500px;
-        /* width: 100%; */
+    }
+
+    .content
+    {
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
@@ -202,7 +222,7 @@ button:hover{
 .services
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid rgb(114, 51, 51);
@@ -216,14 +236,15 @@ button:hover{
 
 .service_title h1
 {
-    font-size: 2rem;
+    font-weight: 900;
+    font-size: 1rem;
     margin: auto;
 }
 
 
 .service_content{
     margin-bottom: 5%;
-    font-size: 1.5rem;
+    font-size: .75rem;
 }
 
 
@@ -234,6 +255,16 @@ button:hover{
 @media screen and (min-width:768px){
     .services{
         flex-direction: column;
+    }
+
+    .service_title h1
+    {
+        font-size: 2rem;
+    }
+
+    .service_content p
+    {
+        font-size: 1.5rem;
     }
 }
 
@@ -253,6 +284,8 @@ button:hover{
 }
 
 .work_title h1{
+    font-weight: 900;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -276,6 +309,7 @@ button:hover{
     transition: .6s;
     cursor: pointer;
     outline: none;
+    font-size: .75rem;
 }
 
 .com:nth-child(7)
@@ -295,6 +329,24 @@ button:hover{
     background-color: rgba(69, 110, 98, 0.156);
     text-align: center;
     margin-bottom: 3%;
+    font-size: .75rem;
+}
+
+@media screen and (min-width:768px) {
+    
+    .work_title h1{
+        font-size: 2rem;
+    }
+
+
+    .com{
+        font-size: 1.5rem;
+    }
+    
+    .motivation
+    {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -312,12 +364,15 @@ footer>div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 3%;
     text-align: center;
+    font-weight: 900;
 }
 
 footer>div a{
+    font-weight: 100;
+    font-size: .75rem;
     text-decoration: none;
 }
 
@@ -329,4 +384,15 @@ footer>div a{
 .a_tag:hover{
     color: rgba(3, 255, 142, 0.492);
     transition: .6s ease-in-out;
+}
+
+@media screen and (min-width:768px) {
+    
+    footer>div{
+        font-size: 2rem;
+    }
+
+    footer>div a{
+        font-size: 1.5rem;
+    }
 }
