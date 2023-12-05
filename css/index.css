@@ -353,21 +353,9 @@ button:hover{
     transition: 1s ease-in-out;
 }
 
-.nep:nth-child(1)
-{
-    width: 100%;
-    font-style: italic;
-    text-align: center;
-    /* padding-top: 4%;
-    padding-bottom: 2%; */
-    margin: 1%;
-    transition: .6s;
-    cursor: pointer;
-    outline: none;
-    font-size: 2rem;
-}
 
-.ind:nth-child(8)
+
+.con
 {
     width: 100%;
     font-style: italic;
@@ -380,7 +368,7 @@ button:hover{
     transition: .6s;
     cursor: pointer;
     outline: none;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .com:hover{
@@ -437,6 +425,11 @@ button:hover{
     .style_ernest
     {
         font-size: 1rem;
+    }
+
+    .con
+    {
+        font-size: 2rem;
     }
 }
 
