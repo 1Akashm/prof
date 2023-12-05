@@ -354,19 +354,24 @@ button:hover{
 }
 
 
+.ind{
+    background: linear-gradient(90deg,rgb(243, 161, 10),rgb(245, 237, 237),rgb(21, 148, 21));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nep{
+    background: linear-gradient(50deg,rgb(252, 0, 50),blue);
+    color: transparent;
+    -webkit-background-clip: text;
+}
 
 .con
 {
     width: 100%;
     font-style: italic;
     text-align: center;
-    /* padding-top: 4%;
-    padding-bottom: 2%; */
-    /* border: 1px solid rgb(30, 30, 55);
-    background-color: black; */
     margin: 1%;
-    transition: .6s;
-    cursor: pointer;
     outline: none;
     font-size: 1rem;
 }
@@ -439,7 +444,6 @@ footer
 {
     border-bottom: 1px solid rgb(114, 51, 51);
     margin-bottom: 2%;
- 
 }
 
 footer>div{
