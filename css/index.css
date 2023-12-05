@@ -15,19 +15,23 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-span{
-    color: rgba(3, 255, 142, 0.492);
-
+.style
+{
+    font-style: italic;
 }
 
-.ernest
+.style_ernest{
+    font-style: italic;
+    font-size: .75rem;
+}
+
+/* .ernest
 {
     color: rgba(3, 255, 142, 0.492);
     font-size: .5rem;
-}
+} */
 
 .info_span{
-    text-decoration: underline;
     color: rgb(185, 181, 181);
     
 }
@@ -119,9 +123,10 @@ button:hover{
     margin: auto;
     object-fit: contain;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.content{
+/* .content{
     width: 100%;
     height: 100%;
     top: 0;
@@ -148,10 +153,10 @@ button:hover{
 
 .content:hover>*{
     transform: translateY(0px);
-}
+} */
 
 .aboutme_desc h1{
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.2rem;
 }
 
@@ -162,8 +167,7 @@ button:hover{
 }
 
 .aboutme_des_span{
-    color: rgb(202, 53, 53);
-    text-decoration: underline;
+    font-weight: 900;
 }
 
 .aboutme_desc p
@@ -171,6 +175,10 @@ button:hover{
     font-size: .75rem;
     width: 100%;
     margin: 1% auto;
+}
+
+.services.about_services{
+    display: none;
 }
 
 @media screen and (min-width:768px){
@@ -206,15 +214,15 @@ button:hover{
 
 @media screen and (min-width:1000px){
 
-    .aboutme_container
-    {
-        margin-top: -2%;
+    .services.about_services{
+        display: block;
+        text-align: center;
     }
 
-   .aboutme_desc
-   {
-    margin-top: -15%;
-   }
+    .aboutme_container
+    {
+        margin-top: -3%; 
+    }
 
    .aboutme_desc p{
     margin-top: 3%;
@@ -226,7 +234,7 @@ button:hover{
     }
 
     .about_img img{
-        max-height: 600px;
+        max-height: 500px;
     }
 
     .content
@@ -236,7 +244,6 @@ button:hover{
         margin-left: 5%;
     }
 }
-
 
 /* my services */
 .services
@@ -293,6 +300,14 @@ button:hover{
     }
 }
 
+@media screen and (min-width:1000px){
+    .services{
+        display: none;
+        border: none;
+        border-top: 1px solid rgb(114, 51, 51);
+        margin-top: 5%;
+    }
+}
 
 .work_container{
     display: flex;
@@ -338,9 +353,34 @@ button:hover{
     transition: 1s ease-in-out;
 }
 
-.com:nth-child(7)
+.nep:nth-child(1)
 {
-    width: 80%;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    /* padding-top: 4%;
+    padding-bottom: 2%; */
+    margin: 1%;
+    transition: .6s;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+}
+
+.ind:nth-child(8)
+{
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    /* padding-top: 4%;
+    padding-bottom: 2%; */
+    /* border: 1px solid rgb(30, 30, 55);
+    background-color: black; */
+    margin: 1%;
+    transition: .6s;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
 }
 
 .com:hover{
@@ -393,8 +433,12 @@ button:hover{
     #tooltiptext{
         font-size: 1.3rem;
     }
-}
 
+    .style_ernest
+    {
+        font-size: 1rem;
+    }
+}
 
 /* footer */
 
@@ -423,7 +467,7 @@ footer>div a{
 }
 
 .a_tag{
-    color: rgb(202, 53, 53);
+    color: rgb(185, 181, 181);
     transition: .6s;
 }
 
