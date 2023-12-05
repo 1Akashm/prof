@@ -20,20 +20,26 @@ span{
 
 }
 
+.ernest
+{
+    color: rgba(3, 255, 142, 0.492);
+    font-size: .5rem;
+}
+
 .info_span{
     text-decoration: underline;
     color: rgb(185, 181, 181);
     
 }
 
-
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-right: 2%;
     padding-left: 2%;
     flex-wrap: wrap;
+    margin-bottom: 1%;
 }
 
 .logo{
@@ -50,9 +56,9 @@ span{
     color: rgb(202, 53, 53);
 }
 
-.logo>img{
-    width: 50px;
-    cursor: pointer;
+.logo> img{
+   width: 5rem;
+    margin-left: 2%;
 }
 
 button{
@@ -104,17 +110,15 @@ button:hover{
     position: relative;
     margin-bottom: 1%;
     border-radius: 10px;
-    margin-top: 1%;
 }
 
 .about_img img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: block;
     margin: auto;
     object-fit: contain;
     border-radius: 10px;
-    
 }
 
 .content{
@@ -177,7 +181,8 @@ button:hover{
 
     .aboutme_desc h1
     {
-        font-size: 2rem;
+        font-size: 3rem;
+        font-weight: 900;
     }
 
     .aboutme_desc p{
@@ -186,6 +191,7 @@ button:hover{
     .about_img
     {
         width: 60%;
+        margin-right: 2%;
     }
 
     .about_img img{
@@ -200,6 +206,20 @@ button:hover{
 }
 
 @media screen and (min-width:1000px){
+
+    .aboutme_container
+    {
+        margin-top: -2%;
+    }
+
+   .aboutme_desc
+   {
+    margin-top: -15%;
+   }
+
+   .aboutme_desc p{
+    margin-top: 3%;
+   }
 
     .about_img
     {
@@ -266,6 +286,11 @@ button:hover{
     {
         font-size: 1.5rem;
     }
+
+    .ernest
+    {
+        font-size: 1rem;
+    }
 }
 
 
@@ -310,13 +335,13 @@ button:hover{
     cursor: pointer;
     outline: none;
     font-size: .75rem;
+    transition: 1s ease-in-out;
 }
 
 .com:nth-child(7)
 {
     width: 80%;
 }
-
 
 .com:hover{
     background-color: black;
@@ -330,6 +355,23 @@ button:hover{
     text-align: center;
     margin-bottom: 3%;
     font-size: .75rem;
+}
+
+#tooltiptext{
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease;
+    font-size: .8rem;
+}
+
+.com:hover #tooltiptext{
+    display: block;
+    opacity: 1;
+    color: #fff;
+}
+
+.com:hover div{
+    display: none;
 }
 
 @media screen and (min-width:768px) {
@@ -346,6 +388,10 @@ button:hover{
     .motivation
     {
         font-size: 1.5rem;
+    }
+
+    #tooltiptext{
+        font-size: 1.3rem;
     }
 }
 
