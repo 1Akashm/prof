@@ -10,24 +10,46 @@ html {
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .style_par
 {
-    font-style: italic;
+    font-style: bold;
     font-weight: 600;
 }
 
 .style_ernest{
-    font-style: italic;
-    font-size: .75rem;
+    font-style: bold;
+    font-size: .5rem;
 }
 
 .style_title{
     font-style: italic;
+    font-family: 'Raleway', sans-serif;
     font-weight: 900;
+    font-size: 1.5rem;
+    /* filter: drop-shadow(0px 2px 1px black); */
+}
 
+.style_title_footer{
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* filter: drop-shadow(0px 2px 1px black); */
+}
+
+@media screen and (min-width:768px)
+{
+    .style_title{
+        font-size: 3rem;
+    }
+
+    .style_title_footer
+    {
+        font-size: 2rem;
+    }
 }
 
 
@@ -123,12 +145,12 @@ button:hover a{
     position: relative;
 }
 
-.aboutsvg{
+/* .aboutsvg{
     position: absolute;
     z-index: -1;
     width: 100%;
     bottom: 0;
-}
+} */
 
 .about_img{
     max-width: 500px;
@@ -152,16 +174,15 @@ button:hover a{
 .aboutme_desc h1{
     font-weight: 800;
     font-size: 1.2rem;
-    letter-spacing: .1rem;
 }
 
 .aboutme_desc{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 10%;
+    align-items: center;
 }
-
-
 
 .aboutme_des_span{
     font-weight: 900;
@@ -206,6 +227,7 @@ button:hover a{
 
     .aboutme_desc{
         margin: 0 2%;
+        padding: 0;
     }
 }
 
@@ -268,8 +290,10 @@ button:hover a{
 
 
 .service_content{
-    margin-bottom: 5%;
-    font-size: .75rem;
+    margin-bottom: 2%;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 2%;
 }
 
 
@@ -324,8 +348,11 @@ button:hover a{
 }
 
 .work_title{
-    margin: 3% 0 2%;
+    margin: 3% 0 0%;
     width: 100%;
+    padding: 5% 0;
+    /* background-color: rgb(235, 243, 232); */
+    background-color: #9EC8B9;
 }
 
 .work_title h1{
@@ -340,37 +367,37 @@ button:hover a{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 2%;
-    background-color: #9EC8B9;
+    /* background-color: #9EC8B9; */
 }
 
 .com{
     width: 48%;
     text-align: center;
-    padding-top: 4%;
-    padding-bottom: 2%;
+   padding: 2%;
     border: 1px solid #000000;
-    margin: 1%;
+    margin-bottom: 1%;
     transition: .6s;
     cursor: pointer;
     outline: none;
-    font-size: .75rem;
-    font-weight: 500;
     transition: 1s ease-in-out;
 }
 
 
 .ind{
-    font-weight: 900;
-    background: linear-gradient(180deg,rgb(243, 161, 10),rgb(245, 237, 237),rgb(21, 148, 21));
+    font-weight: 700;
+    font-family: 'Raleway',sans-serif;
+    /* background: linear-gradient(180deg,rgb(243, 161, 10),rgb(245, 237, 237),rgb(21, 148, 21));
     color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 .nep{
-    font-weight: 900;
-    background: linear-gradient(0deg,rgb(252, 0, 50),blue);
+    font-weight: 700;
+    
+    font-family: 'Raleway',sans-serif;
+    /* background: linear-gradient(0deg,rgb(252, 0, 50),blue);
     color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 .con
@@ -393,8 +420,8 @@ button:hover a{
 
 .motivation{
     text-align: center;
-    font-size: .75rem;
     background-color: #ebf3e8;
+    padding: 2%;
 }
 
 #tooltiptext{
@@ -402,6 +429,7 @@ button:hover a{
     opacity: 0;
     transition: opacity 2s ease;
     font-size: .8rem;
+    font-weight: 200;
 }
 
 .com:hover #tooltiptext{
@@ -423,6 +451,7 @@ button:hover a{
 
     .com{
         font-size: 1.5rem;
+        width: 40%;
     }
     
     .motivation
@@ -431,8 +460,8 @@ button:hover a{
     }
 
     #tooltiptext{
-        font-size: 1.3rem;
-        font-weight: 600;
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 
     .style_ernest
