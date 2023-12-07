@@ -33,7 +33,6 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 1.25rem;
-    /* filter: drop-shadow(0px 2px 1px black); */
 }
 
 .style_title_footer{
@@ -41,7 +40,6 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    /* filter: drop-shadow(0px 2px 1px black); */
 }
 
 @media screen and (min-width:768px)
@@ -70,7 +68,6 @@ body{
     padding-right: 2%;
     padding-left: 2%;
     flex-wrap: wrap;
-    /* margin-bottom: 1%; */
 }
 
 .logo{
@@ -139,23 +136,15 @@ button:hover a{
 
 .aboutme_container
 {
-    /* background: #9EC8B9; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border-bottom: 1px solid rgb(114, 51, 51); */
     position: relative;
     line-height: 1.5rem;
 }
 
-/* .aboutsvg{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    bottom: 0;
-} */
 
 .about_img{
     max-width: 500px;
@@ -197,7 +186,7 @@ button:hover a{
 {
     font-size: .75rem;
     width: 100%;
-    margin: 1% auto;
+    /* margin: 1% auto; */
 }
 
 .services.about_services{
@@ -247,13 +236,13 @@ button:hover a{
 
 
    .aboutme_desc p{
-    margin-top: 3%;
+    /* margin-top: 3%; */
    }
 
     .about_img
     {
         width: 100%;
-        margin-top: 1%;
+        /* margin-top: 1%; */
     }
 
     .about_img img{
@@ -284,7 +273,7 @@ button:hover a{
 
 .service_title
 {
-    margin: 3% auto 2%;
+    /* margin: 3% auto 2%; */
 }
 
 .service_title h1
@@ -333,7 +322,7 @@ button:hover a{
         display: none;
         border: none;
         border-top: 1px solid #b0a695;
-        margin-top: 5%;
+        /* margin-top: 5%; */
         border-right: 1px solid #b0a695;
        
     }
@@ -348,16 +337,12 @@ button:hover a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* border-bottom: 1px solid rgb(114, 51, 51); */
-    /* margin-bottom: 3%; */
-    /* background-color: #ebf3e8; */
 }
 
 .work_title{
     margin: 3% 0 0%;
     width: 100%;
     padding: 5% 0;
-    /* background-color: rgb(235, 243, 232); */
     background-color: #9EC8B9;
 }
 
@@ -373,13 +358,12 @@ button:hover a{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 2%;
-    /* background-color: #9EC8B9; */
 }
 
 .com{
     width: 48%;
     text-align: center;
-   padding: 2%;
+    padding: 2%;
     border: 1px solid #000000;
     margin-bottom: 1%;
     transition: .6s;
@@ -491,9 +475,7 @@ button:hover a{
 footer
 {
     /* margin-top: 2%; */
-    /* border-bottom: 1px solid rgb(114, 51, 51); */
     background: #DDF2FD;
-    /* margin-bottom: 2%; */
 }
 
 footer>div{
