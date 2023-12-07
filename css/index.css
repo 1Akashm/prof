@@ -28,7 +28,7 @@ body{
     font-style: italic;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     /* filter: drop-shadow(0px 2px 1px black); */
 }
 
@@ -143,6 +143,7 @@ button:hover a{
     flex-direction: column;
     /* border-bottom: 1px solid rgb(114, 51, 51); */
     position: relative;
+    line-height: 1.5rem;
 }
 
 /* .aboutsvg{
@@ -202,6 +203,7 @@ button:hover a{
 @media screen and (min-width:768px){
     .aboutme_container{
         flex-direction: row-reverse;
+        line-height: 2.5rem;
     }
 
     .aboutme_desc h1
@@ -393,7 +395,6 @@ button:hover a{
 
 .nep{
     font-weight: 700;
-    
     font-family: 'Raleway',sans-serif;
     /* background: linear-gradient(0deg,rgb(252, 0, 50),blue);
     color: transparent;
@@ -422,6 +423,10 @@ button:hover a{
     text-align: center;
     background-color: #ebf3e8;
     padding: 2%;
+}
+
+.motivation p{
+    font-style: italic;
 }
 
 #tooltiptext{
@@ -460,7 +465,7 @@ button:hover a{
     }
 
     #tooltiptext{
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
     }
 
