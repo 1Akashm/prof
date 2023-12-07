@@ -279,7 +279,7 @@ button:hover a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 .service_title
@@ -490,7 +490,7 @@ button:hover a{
 
 footer
 {
-    margin-top: 2%;
+    /* margin-top: 2%; */
     /* border-bottom: 1px solid rgb(114, 51, 51); */
     background: #DDF2FD;
     /* margin-bottom: 2%; */
