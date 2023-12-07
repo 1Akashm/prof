@@ -469,6 +469,11 @@ button:hover a{
     {
         font-size: 2rem;
     }
+
+    .ind,.nep
+    {
+        font-size: 2rem;
+    }
 }
 
 /* footer */
