@@ -202,7 +202,6 @@ button:hover a{
 
 .aboutme_desc h1{
     line-height: 1;
-    /* margin-top: 15px; */
 }
 
 .aboutme_desc{
@@ -230,8 +229,6 @@ button:hover a{
 @media screen and (min-width:768px){
     .aboutme_container{
         flex-direction: row-reverse;
-        /* line-height: 2.5rem; */
-        /* align-items: flex-; */
     }
 
     .aboutme_desc
@@ -279,7 +276,9 @@ button:hover a{
     }
 
    .aboutme_desc p{
+    width: 95%;
     margin-top: 3%;
+    margin: 0;
    }
 
     .about_img
