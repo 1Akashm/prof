@@ -275,6 +275,12 @@ button:hover a{
         width: 95%;
     }
 
+
+    .list_items{
+        width: 70%;
+    }
+
+
    .aboutme_desc p{
     width: 95%;
     margin-top: 3%;
@@ -311,6 +317,18 @@ button:hover a{
     border-top: 1px solid #b0a695;
         border-right: 1px solid #b0a695;
 }
+
+.list_items{
+    width: 90%;
+    margin: 10px auto 0;
+    text-align: left;
+    font-size: 10px;
+}
+
+.list_items ul{
+    margin-left: 5px;
+}
+
 
 .service_title
 {
@@ -351,6 +369,13 @@ button:hover a{
     {
         font-size: 1rem;
     }
+
+    .list_items
+    {
+        width: 70%;
+        margin: 20px auto 0;
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width:1000px){
@@ -363,6 +388,8 @@ button:hover a{
         border-right: 1px solid #b0a695;
        
     }
+
+
 }
 
 /* experience */
@@ -509,6 +536,93 @@ button:hover a{
     }
 }
 
+
+
+
+/* Travel */
+
+.travel_h1{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.style_title_travel{
+    font-size: 16px;
+    color: #88581B;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+}
+
+
+.travel
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto ;
+    justify-content: space-between; 
+}
+
+.travel .image{
+    width: 40%;
+    height: 100%;
+    position: relative;max-width: 250px;
+    margin-bottom: 20px;
+}
+
+
+.travel .image .country_name{
+    position: absolute;
+    width: 100%;
+    height: 96%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .8s ease;
+    /* transform: translateY(20px); */
+}
+
+.country_name >p{
+    font-style: bold;
+    font-size: 16px;
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+
+    .travel{
+        justify-content: space-evenly;
+    }
+
+    .country_name >p{
+        font-size: 24px;
+    }
+
+    .style_title_travel{
+        font-size: 24px;
+    }
+}
+
+.travel .image .country_name:hover{
+    background-color: rgba(0.2,0,0,.8);
+    opacity: 1;
+}
+
+.country_name>*
+{
+    transform: translateY(25px);
+    transition: transform .6s;
+}
+
+.country_name:hover>*
+{
+    transform: translateY(0px);
+}
+
 /* footer */
 
 footer
@@ -528,6 +642,7 @@ footer>div{
     font-weight: 900;
 }
 
+/* footer */
 footer>div a{
     font-weight: 100;
     font-size: .75rem;
