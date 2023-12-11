@@ -428,6 +428,10 @@ button:hover a{
     transition: 1s ease-in-out;
 }
 
+.com.suman{
+    width: 90%;
+}
+
 
 .ind{
     font-size: 14px;
@@ -449,6 +453,7 @@ button:hover a{
     outline: none;
     font-size: 1rem;
 }
+
 
 .com:hover{
     background: #ebf3e8;
